@@ -2,7 +2,7 @@ import React ,{useState} from 'react';
 import Accordion from './component/Accordion';
 import Search from "./component/Search";
 import Dropdown from "./component/Dropdown"
-
+import Translate from './component/Translate'
  const items=[ {
     title: "what is React",
     content: "React is a fornt end development framework",
@@ -32,23 +32,11 @@ const options = [
   },
 ];
 
-const App = () => {
-  const [selected, setSelected] = useState(options[0]);
-  const [showDropdown, setShowDropdown] = useState(true);
-
+const App = () => { 
   return (
     <div>
-      <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Drop Down</button>
-      {showDropdown ?
-        (<Dropdown
-        selected={selected}
-        onSelectedChange={setSelected}
-        options={options}
-        />) :
-        null
-
-      }
-      
+     
+      <Translate />
    </div>
   )
 }
