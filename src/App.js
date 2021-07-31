@@ -3,6 +3,8 @@ import Accordion from './component/Accordion';
 import Search from "./component/Search";
 import Dropdown from "./component/Dropdown"
 import Translate from './component/Translate'
+import Images from './component/Images';
+
  const items=[ {
     title: "what is React",
     content: "React is a fornt end development framework",
@@ -36,7 +38,7 @@ const App = () => {
   return (
     <div>
      
-      <Translate />
+      <Images />
    </div>
   )
 }
